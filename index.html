@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-title">My Library</a>
+    </nav>
+    <div class="container">
+        <!-- APP -->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add Book</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="author" placeholder="Author Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="pages" placeholder="Number of pages" class="form-control"
+                                value="100" min="0">
+                        </div>
+                        <input type="submit" placeholder="Save Book" class="btn btn-primary btn-block">
+                    </form>
+
+                </div>
+            </div>
+            <div id="book-list" class="col-md-8">
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
